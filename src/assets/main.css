@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+  /* Color variables */
+  --color-cyan-base: hsl(172, 67%, 45%);
+  --color-cyan-dark: hsl(183, 100%, 15%);
+  --color-gray-dark: hsl(186, 14%, 43%);
+  --color-gray-light: hsl(185, 41%, 84%);
+  --color-gray-lighter: hsl(189, 41%, 97%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Breakpoint variables */
+  --breakpoint-mobile: 375px;
+  --breakpoint-destkop: 1440px;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  padding: 2rem;
+}
+
+input:focus-visible {
+  border: none;
+}
