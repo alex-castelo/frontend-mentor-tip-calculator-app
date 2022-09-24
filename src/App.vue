@@ -4,9 +4,7 @@
     <body>
       Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
       person Total / person Reset
-      <p>
-        <base-input label="Bill" v-model="bill" type="number" icon="dollar" />
-      </p>
+      <p></p>
 
       <div class="attribution">
         Challenge by
@@ -17,12 +15,7 @@
     </body>
   </main>
 </template>
-<script lang="ts" setup>
-import { ref } from 'vue'
-import BaseInput from './components/BaseInput.vue'
 
-const bill = ref('')
-</script>
 <style scoped>
 .attribution {
   font-size: 11px;
