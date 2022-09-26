@@ -43,4 +43,15 @@ describe('BaseInput', () => {
 
     expect(wrapper.find('img').exists()).toBe(false)
   })
+
+  it('emits update:modelValue event when user types', () => {
+    const wrapper = mount(BaseInput)
+    const input = wrapper.find('input')
+
+    input.setValue('potato')
+
+    expect(input.element.value).toBe('potato')
+    console.log(wrapper.emitted())
+    expect(wrapper.emitted()['update:modelValue']).toHaveProperty('')
+  })
 })
