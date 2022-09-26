@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Space Mono', monospace;
-  padding: 2rem;
+  background-color: var(--color-gray-light);
 }
 
 input:focus-visible {

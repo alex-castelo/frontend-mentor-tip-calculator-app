@@ -56,12 +56,12 @@ input {
   text-align: right;
   font-weight: 700;
   padding: 8px;
+  width: 100%;
 }
 .base-input {
   display: grid;
   row-gap: 0.25rem;
   grid-template-columns: 1fr;
-  max-width: fit-content;
 }
 
 .input-feedback {
@@ -75,7 +75,7 @@ input {
 }
 
 .input-label {
-  color: var(--color-cyan-base);
+  color: var(--color-cyan-dark);
 }
 
 .input-wrapper-error {
