@@ -51,7 +51,6 @@ describe('BaseInput', () => {
     input.setValue('potato')
 
     expect(input.element.value).toBe('potato')
-    console.log(wrapper.emitted())
-    expect(wrapper.emitted()['update:modelValue']).toHaveProperty('')
+    expect(wrapper.emitted()['update:modelValue']).toEqual([['potato']])
   })
 })

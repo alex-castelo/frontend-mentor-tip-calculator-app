@@ -2,14 +2,11 @@
   <main>
     <body>
       <h1>SPLITTER</h1>
-      <base-card>
+      <base-card class="stack-medium">
         <base-input label="Bill" icon="dollar" />
         Select Tip % 5% 10% 15% 25% 50% Custom
         <base-input label="Number of People" icon="person" />
-        Tip Amount / person Total / person Reset
-        <base-card category="dark">
-          <base-button category="secondary">RESET</base-button>
-        </base-card>
+        <summary-card />
       </base-card>
       <div class="attribution">
         Challenge by
@@ -21,9 +18,9 @@
   </main>
 </template>
 <script lang="ts" setup>
-import BaseButton from './components/BaseButton'
 import BaseCard from './components/BaseCard'
 import BaseInput from './components/BaseInput'
+import SummaryCard from './components/SummaryCard'
 </script>
 
 <style scoped>

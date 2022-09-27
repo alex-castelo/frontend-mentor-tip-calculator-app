@@ -32,7 +32,7 @@ button {
   border: none;
   border-radius: 8px;
   font-weight: 700;
-  padding: 16px;
+  padding: 8px 16px;
   font-size: 24px;
   text-align: center;
   color: var(--color-white);
