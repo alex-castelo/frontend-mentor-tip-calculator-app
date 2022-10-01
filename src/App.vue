@@ -3,9 +3,19 @@
     <body>
       <h1>SPLITTER</h1>
       <base-card class="stack-medium">
-        <base-input label="Bill" icon="dollar" />
-        Select Tip % 5% 10% 15% 25% 50% Custom
-        <base-input label="Number of People" icon="person" />
+        <base-input
+          type="number"
+          label="Bill"
+          icon="dollar"
+          placeholder="Bill"
+        />
+        <tip-selector v-model="selectedTip" />
+        <base-input
+          type="number"
+          label="Number of People"
+          icon="person"
+          placeholder="Number of people"
+        />
         <summary-card />
       </base-card>
       <div class="attribution">
@@ -18,14 +28,19 @@
   </main>
 </template>
 <script lang="ts" setup>
+import { ref } from 'vue'
 import BaseCard from './components/BaseCard'
 import BaseInput from './components/BaseInput'
 import SummaryCard from './components/SummaryCard'
+import TipSelector from './components/TipSelector'
+
+const selectedTip = ref(0)
 </script>
 
 <style scoped>
 .attribution {
   font-size: 11px;
+  display: none;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

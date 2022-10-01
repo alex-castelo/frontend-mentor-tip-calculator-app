@@ -13,7 +13,7 @@
       </div>
       <div class="amount">${{ totalAmount }}</div>
     </div>
-    <base-button @click="reset" category="secondary">RESET</base-button>
+    <base-button category="secondary" @click="reset">RESET</base-button>
   </base-card>
 </template>
 

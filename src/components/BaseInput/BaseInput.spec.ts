@@ -7,6 +7,7 @@ describe('BaseInput', () => {
     const wrapper = mount(BaseInput, {
       props: {
         label: 'default',
+        placeholder: 'default',
       },
     })
 

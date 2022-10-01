@@ -20,7 +20,7 @@ defineProps({
 
 <style scoped>
 .card {
-  padding: 16px;
+  padding: 24px;
   border-radius: 16px;
 }
 

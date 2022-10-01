@@ -1,7 +1,7 @@
 <template>
-  <label class="base-input">
+  <label class="base-input stack-small">
     <div class="input-feedback">
-      <span class="input-label"> {{ label }}</span>
+      <span v-if="label !== ''" class="input-label"> {{ label }}</span>
       <span v-if="hasError" class="input-error">{{ errorMessage }}</span>
     </div>
     <div
@@ -15,7 +15,7 @@
       />
       <input
         v-bind="$attrs"
-        :placeholder="label"
+        :placeholder="placeholder"
         :value="modelValue"
         @input="$emit('update:modelValue', $event?.target?.value)"
       />
@@ -34,8 +34,11 @@ import type { PropType } from 'vue'
 
 export type InputIcons = 'person' | 'dollar' | 'none'
 
+defineEmits(['update:modelValue'])
+
 defineProps({
   label: { type: String, default: '' },
+  placeholder: { type: String, default: '' },
   modelValue: { type: [String, Number], default: '' },
   icon: {
     type: String as PropType<InputIcons>,
