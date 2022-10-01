@@ -5,13 +5,13 @@
         <span class="title">Tip Amount</span
         ><span class="subtitle">/ person</span>
       </div>
-      <div class="amount">${{ personAmount }}</div>
+      <div class="amount">${{ personAmount.toFixed(2) }}</div>
     </div>
     <div class="summary-item stack-small">
       <div class="summary-item-legend">
         <span class="title">Total</span><span class="subtitle">/ person</span>
       </div>
-      <div class="amount">${{ totalAmount }}</div>
+      <div class="amount">${{ totalAmount.toFixed(2) }}</div>
     </div>
     <base-button category="secondary" @click="reset">RESET</base-button>
   </base-card>
