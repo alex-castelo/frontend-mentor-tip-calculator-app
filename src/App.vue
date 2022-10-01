@@ -1,7 +1,7 @@
 <template>
   <main>
     <body>
-      <h1>SPLITTER</h1>
+      <the-header />
       <base-card class="stack-medium">
         <base-input
           type="number"
@@ -29,6 +29,8 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+
+import TheHeader from './components/TheHeader'
 import BaseCard from './components/BaseCard'
 import BaseInput from './components/BaseInput'
 import SummaryCard from './components/SummaryCard'
