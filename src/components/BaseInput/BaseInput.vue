@@ -4,9 +4,7 @@
       <span v-if="label !== ''" class="input-label"> {{ label }}</span>
       <span v-if="hasError" class="input-error">{{ errorMessage }}</span>
     </div>
-    <div
-      :class="{ 'input-wrapper-error': hasError, 'input-wrapper': !hasError }"
-    >
+    <div class="input-wrapper" :class="{ 'input-wrapper-error': hasError }">
       <img
         v-if="icon !== 'none'"
         :alt="`${icon}-icon`"
@@ -83,7 +81,6 @@ input {
 
 .input-wrapper-error {
   border: 1.5px solid red;
-  border-radius: 8px;
 }
 
 .input-wrapper:focus-visible,

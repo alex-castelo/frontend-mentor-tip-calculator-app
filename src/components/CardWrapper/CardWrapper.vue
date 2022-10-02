@@ -13,7 +13,9 @@
       type="number"
       label="Number of People"
       icon="person"
+      :has-error="peopleIsZero"
       placeholder="Number of people"
+      error-message="Can't be zero"
     />
     <summary-card
       :person-amount="personTipAmount"
@@ -33,7 +35,7 @@ import TipSelector from '../../components/TipSelector'
 
 const selectedTip = ref('')
 const totalBill = ref('')
-const totalPeople = ref('')
+const totalPeople = ref(1)
 
 const personTipAmount = computed(() => {
   const result =
@@ -50,9 +52,11 @@ const personCheckAmount = computed(() => {
   return isNaN(result) || !isFinite(result) ? 0 : result
 })
 
+const peopleIsZero = computed(() => Number(totalPeople.value) === 0)
+
 const reset = () => {
   selectedTip.value = ''
   totalBill.value = ''
-  totalPeople.value = ''
+  totalPeople.value = 1
 }
 </script>
