@@ -1,5 +1,5 @@
 <template>
-  <div class="tip-selector stack-medium">
+  <div class="tip-selector stack-small">
     <span class="tip-label">Select Tip %</span>
     <div class="tip-options">
       <div v-for="tip in commonTips" :key="`${tip}-option`" class="tip-option">
@@ -45,9 +45,18 @@ const updateCustomValue = (newVal: number) => {
 </script>
 
 <style scoped>
+.tip-label {
+  color: var(--color-gray-dark);
+}
 .tip-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.75rem;
+}
+
+@media (min-width: 426px) {
+  .tip-options {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 </style>

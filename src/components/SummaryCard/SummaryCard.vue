@@ -1,27 +1,35 @@
 <template>
   <base-card category="dark" class="summary-card stack-medium">
-    <div class="summary-item stack-small">
-      <div class="summary-item-legend">
-        <span class="title">Tip Amount</span
-        ><span class="subtitle">/ person</span>
+    <div class="prices-section stack-large">
+      <div class="summary-item stack-small">
+        <div class="summary-item-legend">
+          <span class="title">Tip Amount</span
+          ><span class="subtitle">/ person</span>
+        </div>
+        <div class="amount">${{ personAmount.toFixed(2) }}</div>
       </div>
-      <div class="amount">${{ personAmount.toFixed(2) }}</div>
-    </div>
-    <div class="summary-item stack-small">
-      <div class="summary-item-legend">
-        <span class="title">Total</span><span class="subtitle">/ person</span>
+      <div class="summary-item stack-small">
+        <div class="summary-item-legend">
+          <span class="title">Total</span><span class="subtitle">/ person</span>
+        </div>
+        <div class="amount">${{ totalAmount.toFixed(2) }}</div>
       </div>
-      <div class="amount">${{ totalAmount.toFixed(2) }}</div>
     </div>
-    <base-button category="secondary" @click="reset">RESET</base-button>
+    <base-button
+      :disabled="isButtonDisabled"
+      category="secondary"
+      @click="reset"
+      >RESET</base-button
+    >
   </base-card>
 </template>
 
 <script setup lang="ts">
 import BaseCard from '../BaseCard'
 import BaseButton from '../BaseButton'
+import { computed } from 'vue'
 
-defineProps({
+const props = defineProps({
   personAmount: {
     type: Number,
     default: 0,
@@ -34,6 +42,10 @@ defineProps({
 
 const emit = defineEmits(['reset'])
 
+const isButtonDisabled = computed(
+  () => props.totalAmount === 0 && props.personAmount === 0
+)
+
 const reset = () => {
   emit('reset')
 }
@@ -43,6 +55,9 @@ const reset = () => {
 .summary-card {
   padding-top: 32px;
   padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .summary-item,

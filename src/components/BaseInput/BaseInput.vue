@@ -76,7 +76,7 @@ input {
 }
 
 .input-label {
-  color: var(--color-cyan-dark);
+  color: var(--color-gray-dark);
 }
 
 .input-wrapper-error {

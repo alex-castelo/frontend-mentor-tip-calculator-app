@@ -4,6 +4,7 @@
       primary: category === 'primary',
       secondary: category === 'secondary',
     }"
+    :disabled="disabled"
     @click="emit('click')"
   >
     <slot />
@@ -23,6 +24,10 @@ defineProps({
     default: 'primary',
     validator: (value: string) => ['primary', 'secondary'].includes(value),
   },
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 
@@ -40,12 +45,19 @@ button {
 
 button:hover,
 button:focus-visible {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-cyan-base);
   color: var(--color-cyan-dark);
 }
 
 button:active {
   transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  transform: none;
+  background: hsl(183, 67%, 22%);
+  color: hsl(183, 60%, 17%);
 }
 
 .primary {
