@@ -80,14 +80,14 @@ input {
 }
 
 .input-wrapper-error {
-  border: 1.5px solid red;
+  outline: 1.5px solid red;
 }
 
 .input-wrapper:focus-visible,
 .input-wrapper:hover,
 .input-wrapper:focus,
 .input-wrapper:active {
-  border: 1.5px solid var(--color-gray-dark);
+  outline: 1.5px solid var(--color-gray-dark);
 }
 
 .input-wrapper {
