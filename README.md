@@ -12,9 +12,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -31,13 +29,12 @@ Users should be able to:
 ### Screenshot
 
 ![Screenshot mobile](./mobile-screenshot.png)
-
 ![Screenshot desktop](./desktop-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/alex-castelo/frontend-mentor-tip-calculator-app)
+- Live Site URL: [Add live site URL here](https://alex-castelo.github.io/frontend-mentor-tip-calculator-app/)
 
 ## My process
 
@@ -50,60 +47,25 @@ Users should be able to:
 - Mobile-first workflow
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vue 3](https://vuejs.org/guide/introduction.html) - JS library
-- [Vue test utils](https://v1.test-utils.vuejs.org/) - React framework
+- [Vue test utils](https://v1.test-utils.vuejs.org/) - Vue testing framework
 - [Vite](https://vitejs.dev/) - As a dev server and bundler
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Vite](https://vitest.dev/) - As test runner
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+As always, I like to use the Frontend Mentor exercises to practice new things I want to learn and to review some of them to see if I understand them well or not.
 
-To see how you can add code snippets, see below:
+In this case, I'm going to New York soon and I thought it was a good idea to make a web app that I could use myself during my trip.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I wanted to use Vue 3, Vite, Vitest and in general tools from the Vue ecosystem to work together and see how they work. The truth is that it has helped me to understand some concepts of the Vue Testing Library that is built on (vue-test-utils).
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+It has been a very entertaining challenge.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+Surely more tests can be added, components can be refactored or some things can be optimized. Maybe, if the project had to evolve, I would focus on building a CI pipeline (with Github actions), in fact, I think that for the next challenge it will be the first thing I will do.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@alex-castelo](https://www.frontendmentor.io/profile/alex-castelo)
+- Twitter - [@jove_nai](https://mobile.twitter.com/jove_nai)
