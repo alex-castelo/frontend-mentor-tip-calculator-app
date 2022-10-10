@@ -15,7 +15,7 @@
         v-bind="$attrs"
         :placeholder="placeholder"
         :value="modelValue"
-        @input="$emit('update:modelValue', $event?.target?.value)"
+        @input="emitInput"
       />
     </div>
   </label>
@@ -32,7 +32,7 @@ import type { PropType } from 'vue'
 
 export type InputIcons = 'person' | 'dollar' | 'none'
 
-defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 
 defineProps({
   label: { type: String, default: '' },
@@ -46,6 +46,12 @@ defineProps({
   hasError: { type: Boolean, default: false },
   errorMessage: { type: String, default: '' },
 })
+
+const emitInput = (e: Event) => {
+  const eventValue = e?.target as HTMLInputElement
+
+  emit('update:modelValue', eventValue.value)
+}
 </script>
 
 <style scoped>

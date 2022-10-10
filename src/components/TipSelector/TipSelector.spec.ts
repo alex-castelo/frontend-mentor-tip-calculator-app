@@ -23,6 +23,5 @@ describe('TipSelector', () => {
     // @ts-ignore
     expect(wrapper.emitted()['update:modelValue'][0][0]).toBe(5)
     expect(wrapper.emitted()).toHaveBeenCalledOnce
-    console.log(wrapper.emitted())
   })
 })
