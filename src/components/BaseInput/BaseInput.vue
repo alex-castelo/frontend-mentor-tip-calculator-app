@@ -8,7 +8,7 @@
       <img
         v-if="icon !== 'none'"
         :alt="`${icon}-icon`"
-        :src="`./src/assets/icons/icon-${icon}.svg`"
+        :src="`./icons/icon-${icon}.svg`"
         class="input-icon"
       />
       <input
