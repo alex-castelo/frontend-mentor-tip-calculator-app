@@ -74,6 +74,11 @@ const reset = () => {
   color: var(--color-white);
 }
 
+.subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .subtitle,
 .amount {
   color: var(--color-cyan-base);

@@ -2,7 +2,7 @@
 
 :root {
   /* Color variables */
-  --color-cyan-base: hsl(172, 67%, 45%);
+  --color-cyan-base: hsl(172, 67%, 50%);
   --color-cyan-dark: hsl(183, 100%, 15%);
   --color-gray-dark: hsl(186, 14%, 43%);
   --color-gray-light: hsl(185, 41%, 84%);

@@ -1,7 +1,9 @@
 <template>
   <div class="the-header">
-    <p>SPLI</p>
-    <p>TTER</p>
+    <h1>
+      <p>SPLI</p>
+      <p>TTER</p>
+    </h1>
   </div>
 </template>
 
@@ -9,6 +11,11 @@
 p {
   margin: 0;
 }
+
+h1 {
+  font-size: inherit;
+}
+
 .the-header {
   margin: 2rem auto;
   display: flex;
